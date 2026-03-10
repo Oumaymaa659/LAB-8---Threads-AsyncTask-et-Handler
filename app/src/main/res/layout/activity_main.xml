@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FAFAFA"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/label_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Application prête"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+
+    <ProgressBar
+        android:id="@+id/loader_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:max="100" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:id="@+id/display_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="aperçu"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <Button
+        android:id="@+id/run_thread_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="false"
+        android:text="Chargement via Thread" />
+
+    <Button
+        android:id="@+id/run_async_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:text="Exécuter AsyncTask" />
+
+    <Button
+        android:id="@+id/action_show_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#607D8B"
+        android:text="Tester la réactivité (Toast)" />
+
+</LinearLayout>
